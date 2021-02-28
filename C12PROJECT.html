@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video : example</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#hed").load("data.txt", function(responseTxt, statusTxt, xhr){
+      if(statusTxt == "success")
+        alert("External content loaded successfully!");
+      if(statusTxt == "error")
+        alert("Error: " + xhr.status + ": " + xhr.statusText);
+    });
+  });
+});
+</script>
+</head>
+<style>
+         * {
+          box-sizing: border-box;
+           }
+
+         html,
+            body {
+               width: 100%;
+               height: 100%;
+               padding: 0px;
+               margin: 0px;
+                 }
+
+            .carousel-inner img {
+               width: 96%;
+               margin-left:20px;
+               margin-left:20px;
+               height: 300px;
+  }
+      .bg {
+          position:fixed;
+          top: 0px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top right;
+        }
+
+  header {
+         position: relative;
+         display: flex;
+         top: 10px;
+         width: 960px;
+         height: 50px;
+
+         margin-left:30px;
+         margin-bottom: 40px;
+         z-index: 10;
+       }
+
+     nav {
+         display: block;
+         flex-grow: 1;
+         flex-shrink: 0;
+         float:right;
+    }
+       header nav button {
+             
+             display: block;
+             background: rgba(0,0,0,.5);
+             border: none;
+             width:100%;
+             height: 50px;
+             color: white;
+             margin:35px;
+             font-size:1.2rem;
+       }
+
+            header nav:hover button {
+            background: rgba(0,0,0,.2);
+            border: solid 1px white;
+    }
+
+      main {
+          padding:60px;
+          position: relative;
+          width: 900px;
+          height:50% ;
+          margin-left:20px;
+    }
+      
+
+      h1 {
+         position: relative;
+         color:white;
+         font-size:36px;
+    }
+     p{
+       font-size:23px;
+       font-family:sans serif;
+       color:white;
+   }
+  .logo{
+       float-top:left;
+       font-size:40px;
+       color:white;
+       padding-right:400px;
+     }
+     body{
+	background: pink;
+}
+
+section.first{
+	height: 400px;
+	background: grey;
+	border: 10px solid black;
+}
+
+.element{
+	background: gold;
+	height: 100px;
+	width: 100px;
+}
+
+.elementy {
+    position: absolute;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 40px;
+	font-family: arial;
+}
+
+
+.magnifier-demo {
+  width: 600px;
+}
+
+.magnifier-demo__image-wrapper {
+  width: 400px;
+  position: relative;
+  display:flex;
+}
+
+.magnifier-demo img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  display:flex;
+}
+
+.magnifier-demo__zoomer {
+  display: flex;
+  position: relative;
+  left: 245px;
+  top: 102px;
+  
+  cursor: move;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.magnifier-demo__zoom-preview {
+  display: flex;
+ 
+  width: 200px;
+  float: right;
+  position: relative;
+  height:200px;
+  border-left: 3px solid white;
+  box-sizing: border-box;
+}
+
+  .c{
+       position:relative;
+       display: flex;
+       background-color:red;
+       border:2px solid red;
+       color:white;
+       font-size:23px;
+       padding:10px;
+       height:50px;
+       text-align:center;
+       width:180px;
+       margin-left:45px;
+       margin-top:20px; 
+   }
+   
+    .fot{
+          display:flex;
+          position:relative;
+          width:100%;
+           height:100px;
+          font-size:10px;
+          color:grey;
+          background-color:black;
+          margin-top:30px;
+}
+    .container{
+        display:flex;
+         position:relative;
+       margin-top:30px;
+          column-count:3;
+          column-gap:10px;
+           font-size:15px;
+           
+        }
+    .h{
+          display:flex;
+         position:relative;
+          height:60px;
+         width:100%;
+padding-top:10px;
+          margin-top:30px;
+          background-color:black;
+          color:white;
+          padding-left:400px;
+          font-size:20px;
+       }
+ 
+       * {
+  box-sizing: border-box;
+  }
+    .item {
+   display:flex;
+  position:relative;
+  width: 85%;
+  height: 100px;
+  margin-top:30px;
+  margin-left:75px;
+padding-left:390px;
+   padding-top:28px;
+   text-align:center;
+  background:lightgrey;
+  color:black;
+  font-size:20px;
+  }
+     .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  float:right;
+  text-align: center;
+  text-decoration: none;
+  margin left:30px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+ color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-google {
+  color: white;
+}
+.fa-youtube {
+  color: white;
+}
+
+.fa-instagram {
+   color: white;
+}
+
+</style>
+
+
+<video class="bg" src="movie.mp4" autoplay loop> </video>
+       
+
+<audio id="audio" style="visibility:hidden;">
+	
+        <source src="doorbell.mp3" type="audio/mpeg; codecs=MPEG-3">
+        
+</audio>
+<header id="hed">
+<div class="logo">Tour&Travels</div>
+<nav>
+<button>Home</button></nav>
+<nav><button>About us </button></nav>
+<nav><button>Contact us</button></nav>
+<nav><button>More Info</button></nav>
+</header>
+
+<div class="c">Covid-19</div>
+<main>
+<h1>We are a Different<br/>
+   from others.....</h1>
+<p>Dear Traveler and Treasured Guest,  <br/> Wherever you are, I hope you and your family <br>are safe and in good health. Enjoy your trip with us..
+</p>
+</main>
+  
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  
+<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="moscow-sluice-35.jpg" alt="Los Angeles" width="100%" height="300px">
+    </div>
+    <div class="carousel-item">
+      <img src="hqdefault 2.jpg" alt="Chicago" width="100%" height="300px">
+    </div>
+    <div class="carousel-item">
+      <img src="Beutiful paris city  3.jpg" alt="New York" width="100%" height="300px">
+    </div>
+      <div class="carousel-item">
+      <img src="HD Wallpapers Wide Pack - 03.jpg" alt="New York" width="100%" height="300px">
+    </div>
+      
+  </div>
+  
+ 
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+  
+
+</div>
+   <div class="h">Here is some info about us......</div>
+<div class="container">
+
+<p class="p1"><b>Mobile App</b><br> For Mobile streamlines business travel
+ and gives travelers the flexibility to manage their 
+itineraries on the go.</p>
+<p class="p1"><b>E-receipts</b><br>
+Many travel suppliers automatically send e-receipts into Concur Expense, speeding the process of report creation and submission.</p>
+<p class="p1"><b>Travel Planning</b><br>
+Enforce policies 
+with a customizable pre-trip planning process that enables managers to approve, reject and request changes.</p></div>
+
+   <div class="item"> Want help finding a vacation?
+          <br/>
+        <b>call on:- 635-275647</b> </div>
+
+        <div class="magnifier-demo">
+		<div class="magnifier-demo__image-wrapper">
+			<img id="magnifier-img" src="hqdefault 2.jpg"> 
+			<span class="magnifier-demo__zoomer"></span>
+		</div>
+		<div class="magnifier-demo__zoom-preview"></div>
+	</div>
+
+<script src="displace.js"></script>
+<script>
+
+const img = document.querySelector('#magnifier-img');
+const preview = document.querySelector('.magnifier-demo__zoom-preview');
+const zoomer = document.querySelector('.magnifier-demo__zoomer');
+const imgDim = {};
+
+if (img.complete){
+	setupMagnifier();
+} else {
+	img.addEventListener('load', setupMagnifier);
+}
+function setupMagnifier(){
+	// set preview bg
+	preview.style.background = `url('${img.src}') no-repeat center center`;
+	
+	// set preview height
+	preview.style.height = img.offsetHeight + 'px';
+
+	const previewR = preview.offsetWidth / preview.offsetHeight;
+
+	// set zoomer dimensions
+	const zoomerW = 50;
+	zoomer.style.width = zoomerW + 'px';
+	zoomer.style.height = zoomerW / previewR + 'px';
+
+	// set bg size for preview div
+	const sizeRatio = img.offsetWidth / preview.offsetWidth;
+	preview.style.backgroundSize = `${img.naturalWidth / sizeRatio}px ${img.naturalHeight / sizeRatio}px`;
+
+	// cache dimensions
+	imgDim.w = img.offsetWidth;
+	imgDim.h = img.offsetHeight;
+
+	// init displace
+	displacejs(zoomer, {
+		constrain: true,
+		onMouseMove: updatePreview
+	});
+
+	// update preview
+	updatePreview(zoomer);
+}
+
+function updatePreview(el){
+	const x = el.offsetLeft / (imgDim.w - el.offsetWidth) * 100;
+	const y = el.offsetTop / (imgDim.h - el.offsetHeight) * 100;
+	
+	preview.style.backgroundPosition = `${x}% ${y}%`;
+}
+</script>
+
+ 
+<footer  class="fot">www.tour&travels.com
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+</footer>
+</body>
+</html>
+
+
