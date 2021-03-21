@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+<style>
+   * {
+  box-sizing: border-box;
+  }
+
+  .item {
+  width: 500px;
+  height: 130px;
+  margin: 50px auto;
+  padding-top: 50px;
+  background:lightgreen;
+  text-align: center;
+  color:black;
+  font-size: 2em;
+  }
+</style>
+
+
+
+<body>
+        <div class="item" data-aos="fade-up">Assignment-04</div>
+        <div class="item" data-aos="fade-down">Sandeep kaur Grewal</div>
+        <div class="item" data-aos="fade-right">Student-id:-***-******</div>
+        <div class="item" data-aos="fade-left">CDI College</div>
+        <div class="item" data-aos="zoom-in">Montreal,Quebec</div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(200);
+  </script>
+  
+
+</body>
+</html>
