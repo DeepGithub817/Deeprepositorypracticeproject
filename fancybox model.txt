@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+<style>
+           p{
+           font-size:25px;
+           text-align:center;
+           color:blue;
+           border:2px solid lightgreen;
+           background-color:lightgreen;
+           height:50px;
+           padding-top:10px;
+           }
+</style>
+</head>
+<body>
+<p > Fancy-Box-Model</p>
+<img src="http://getwallpapers.com/wallpaper/full/c/5/2/82000.jpg" id="img" style="width: 589px; height: 332px;">
+<br>
+<div style="display:none;" id="hidden-content">
+<h2>Hello</h2>
+<h5>That's an awesome box.</h5>
+</div>
+<a data-fancybox data-src="#hidden-content" href="javascript:;">
+Trigger the fancybox
+</a>
+<br>
+<a data-fancybox data-src="#hidden-content" href="javascript:;">
+..... or this one
+</a>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<p>Sandeep Kaur Grewal</p>
+</body>
+</html>
+
