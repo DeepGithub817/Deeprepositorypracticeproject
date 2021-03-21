@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#hideshow").click(function(){
+    $("section#hideshow div").toggle(3000);
+  });
+});
+</script>
+<script>
+   
+ $(document).ready(function(){
+  $("button").click(function(){
+    $("#fadeout").fadeOut("slow");
+    
+  });
+   
+  });
+  </script>
+  
+  
+<style>
+header {
+  background-color: grey;
+  color:black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, header:hover {
+  background-color: lightgrey; 
+}
+
+ p{
+  padding: 0 18px;
+  display: none;
+  background-color:pink;
+  overflow: hidden;
+  font-size:20px;
+  color:blue;
+}
+</style>
+</head>
+<body>
+<section id="fo"><div style="background-color:grey; color:white;text-align:center; ">Assignment-02</div></section>
+
+<script>
+   $("#fo").animate(
+   {
+           opacity:.3,
+           width:"100px",
+           height:"50px"
+           },6000,function(){
+           }
+           );
+</script>
+
+<br>
+<button><div id="fadeout" style="width:1000px; font-size:20px;text-align:center;height:80px; color:white;background-color:grey;">Fade out</div>
+</button><br><br>
+
+<h2>More Details </h2>
+<div class="accordion">
+<header>Section 1</header>
+<p>Sandeep Kaur Grewal.  </p>
+
+<header >Section 2</header>
+<p> ST-ID:-***-****** </p>
+
+
+<header>Section 3</header>
+<p> CDI College.</p>
+
+</div>
+<script>
+$(document).ready(function(){
+$(".accordion").on("click","header",function(){
+      $(this).next().slideToggle();
+      });
+      });
+</script>
+<br>
+
+<section id="hideshow" style="height:40px; color:black; padding-top:10px; background-color:grey; font-size:25px; text-align:center;">
+  <div> Thanks For Vist</div>
+</section>
+
+</body>
+</html>
