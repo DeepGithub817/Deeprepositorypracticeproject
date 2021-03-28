@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://th.bing.com/th/id/Rd25bc99d867c94d1dba2d35c65183e33?rik=FNbsAqeEMVnIIg&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2016%2f10%2fLaptop-and-coffee-in-outdoor-office.jpg&ehk=ErrkeptqeuCpU54at%2b%2bcmQPyqazH2V94JN4TUU0BZL0%3d&risl=&pid=ImgRaw");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: left;
+  background: black;
+  color: white;
+}
+
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size:20px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: none;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:none;
+  color: lightgreen;
+}
+ /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  
+  width: 33.3%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+ 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 790px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    
+  /*style of about , contact*/
+       h3{
+           margin-top:30px;
+           margin-bottom:30px;
+           padding:10px 20px;
+           font-size:30px;
+           text-align:center;
+           color:black;
+           }
+           
+           /* contact form*/
+           input[type=text], select, textarea {
+  width: 50%;
+  align:center;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left:360px;
+  margin-top: 6px;
+  
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  align:center;
+ padding-top:20px;
+  
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height:600px;
+}
+  /*footer*/
+    footer{
+      background-color:black;
+       color:lightgrey;
+       height:200px;
+       padding-top:50px;
+       
+     }
+   .legal {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>Sandeep Grewal</h1>
+  <div class="navbar">
+        <li><a href="contact1.html">Contact</a></li>
+       <li><a href="about1.html">About </a></li>
+       <li><a href="home1.html">Home</a></li>
+ </div>
+</div>
+    <div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>Bonjour/Hello</h2>
+  <h1 style="font-size:25px">I am Sandeep Kaur Grewal</h1>
+  <p>Web design is not just creating pretty layouts.It's aboutunderstanding the marketing challenges behind your business. </p>
+</div>
+
+<h2 style="text-align:center">ABOUT ME</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.VA-rR_595a5QKj0C9y85dQHaEQ?w=298&h=180&c=7&o=5&pid=1.7" alt="education" style="width:50%">
+      <div class="container">
+        <h2>Education</h2>
+        <p> Senior secondary with Commerce stream from Meritorious public School, Bathinda(India), Punjab(India)
+       </p>
+        <p>Bachelor's of web designing & Development at Cdi College Downtown Campus, Montreal,Quebec</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/Ra30c45351a96ec4a1922cf225e70a0a8?rik=pdcaoaUPKtheDA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_406217.png&ehk=s7xpMkSnBPNtvnh7EcIXiW2G0peU%2bp7%2fDVUqZ30O3Qo%3d&risl=&pid=ImgRaw" alt="skils" style="width:50%">
+      <div class="container">
+        <h2>Skills</h2>
+        
+        <p> HTML CSS5 HTML5</P>
+        <P>JavaScript JQuery </p>
+        <p>Adobe Illustrator Advance Photoshop</p>
+        <p>Computer Skills Advanced knowledge of MS Excel</p>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R766fe3f896d8005ccb7dd33b9538f9c9?rik=r%2fGomI5CGtzqtw&riu=http%3a%2f%2f4.bp.blogspot.com%2f_jeSuLa5ZscU%2fTQDkndpsJHI%2fAAAAAAAAt_A%2fcXbi3_10FDA%2fs400%2fPicture%252B13.png&ehk=65ZQXzmAFQZowaTFlgrp03DLD9wR93TNlZ8mQ66GgKY%3d&risl=&pid=ImgRaw" alt="project" style="width:50% ">
+      <div class="container">
+        <h2>Project</h2>
+        
+        <p>Todo List Project</p>
+        <p>Weather App (APIs)</p>
+        <p>Resturant website</p>
+      </div>
+    </div>
+  </div>
+</div>
+       
+ <div class="contact"><h3>CONTACT ME</h3>
+   <div class="container">
+   <form action="/action_page.php">
+   <div>
+     <label for="fname"></label>
+     <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+     <label for="lname">
+     <input type="text" id="lname" name="lastname" placeholder="Your last name"></label></div>
+     <label for="lname"></label>
+     <input type="text" id="lname" name="email" placeholder="Your Email ">
+     
+     <label for="subject"></label>
+     <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+     <input type="submit" value="Submit">
+  </form>
+   </div></div>
+<footer>
+       <div class="legal">
+    
+    <p>sandepkaurgrewal1998@gmail.com</P>
+    
+    <div class="legal__links">
+      <span>Made for Work with <span class="heart">?</span> remotely from Anywhere</span>
+      
+    </div>
+    <div></div>
+    </div><span>Call:-416-823-7642</span>
+     
+
+</div>
+  </div>
+
+</footer>
+
+</body>
+</html>
